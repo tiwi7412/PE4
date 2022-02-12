@@ -31,9 +31,25 @@ char** CreateBoard()
 
     return board;
 }
-
+int* GetPlayerChoice()
+{
+    int col,row = 0;
+    std::cout << "What column would you like to play in?" << std::endl;
+    std::cin >> col;
+    std::cout << "What Row would you like to play in?" << std::endl;
+    std::cin >> row;
+    int *arr = new int[2];
+    arr[0] = row;
+    arr[1] = col;
+    return arr;
+}
 int main()
 {
     char** board = CreateBoard();
-    DisplayBoard(board);
+    displayBoard(board);
+    int *arr = GetPlayerChoice();
+    char e = 'X';
+    char *p = &e;
+    board[arr[0],arr[1]] = p;
+    displayBoard(board);
 }
