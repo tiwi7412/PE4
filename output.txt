@@ -1,0 +1,91 @@
+Player ones Turn
+N N N 
+N N N 
+N N N 
+======
+======
+What column would you like to play in?
+0
+What Row would you like to play in?
+0
+Player twos Turn
+X N N 
+N N N 
+N N N 
+======
+======
+What column would you like to play in?
+1
+What Row would you like to play in?
+0
+Player ones Turn
+X O N 
+N N N 
+N N N 
+======
+======
+What column would you like to play in?
+2
+What Row would you like to play in?
+0
+Player twos Turn
+X O X 
+N N N 
+N N N 
+======
+======
+What column would you like to play in?
+0
+What Row would you like to play in?
+1
+Player ones Turn
+X O X 
+O N N 
+N N N 
+======
+======
+What column would you like to play in?
+1
+What Row would you like to play in?
+1
+Player twos Turn
+X O X 
+O X N 
+N N N 
+======
+======
+What column would you like to play in?
+2
+What Row would you like to play in?
+1
+Player ones Turn
+X O X 
+O X O 
+N N N 
+======
+======
+What column would you like to play in?
+02
+What Row would you like to play in?
+2    
+Player twos Turn
+X O X 
+O X O 
+N N X 
+======
+======
+What column would you like to play in?
+0
+What Row would you like to play in?
+2
+Player ones Turn
+X O X 
+O X O 
+O N X 
+======
+======
+What column would you like to play in?
+1
+What Row would you like to play in?
+2
+(base) benellis@Bens-MacBook-Pro PE4 % 

@@ -51,15 +51,28 @@ int* GetPlayerChoice()
 }
 int main()
 {
-    char** board = CreateBoard();
+    int player = 0;
     const char *x = "X";
     const char *o = "O";
-    displayBoard(board);
-    PlaceMarker(0,0,board,x);
-    displayBoard(board);
-    int *arr = GetPlayerChoice();
-    char e = 'X';
-    char *p = &e;
-    board[arr[0],arr[1]] = p;
+    char** board = CreateBoard();
+    for(int i = 0; i < 9; i++)
+    {
+        if(player == 0)
+        {
+            std::cout << "Player ones Turn" << std::endl;
+            displayBoard(board);
+            int *arr = GetPlayerChoice();
+            PlaceMarker(arr[1],arr[0],board,x);
+            player = 1;
+        }
+        else
+        {
+            std::cout << "Player twos Turn" << std::endl;
+            displayBoard(board);
+            int *arr = GetPlayerChoice();
+            PlaceMarker(arr[1],arr[0],board,o);
+            player = 0;
+        }
+    }
     displayBoard(board);
 }
