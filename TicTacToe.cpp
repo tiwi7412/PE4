@@ -31,8 +31,9 @@ char** CreateBoard()
 
     return board;
 }
+
 int main()
 {
     char** board = CreateBoard();
-    displayBoard(board);
+    DisplayBoard(board);
 }
