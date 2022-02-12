@@ -12,9 +12,8 @@ char** CreateBoard()
 
     return board;
 }
-int main()
+void DisplayBoard(char** board)
 {
-    char** board = CreateBoard();
     for (int i = 0; i < 3; i++)
     {
         std::cout << board[0][i] << " ";
@@ -30,4 +29,9 @@ int main()
         std::cout << board[2][k] << " ";
     }
     std::cout << std::endl;
+}
+int main()
+{
+    char** board = CreateBoard();
+    DisplayBoard(board);
 }
