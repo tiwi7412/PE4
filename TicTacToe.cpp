@@ -1,5 +1,10 @@
 #include <iostream>
 
+void PlaceMarker(const int col, const int row, char**brd, const char* marker)
+{
+    brd[row][col] = *marker;
+}
+
 void displayBoard(char** brd)
 {
      for (int x = 0; x < 3;x++)
@@ -17,6 +22,7 @@ void displayBoard(char** brd)
         std::cout << brd[2][k] << " ";
     }
     std::cout << std::endl;
+    std::cout << "======" << std::endl << "======" << std::endl;
 }
 
 char** CreateBoard()
@@ -34,5 +40,9 @@ char** CreateBoard()
 int main()
 {
     char** board = CreateBoard();
+    const char *x = "X";
+    const char *o = "O";
+    displayBoard(board);
+    PlaceMarker(0,0,board,x);
     displayBoard(board);
 }
